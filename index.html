@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bismar Darussalam</title>
+    <!-- icon title -->
+    <link rel="icon" href="img/logos/darbis-logo.png" type="image/png" />
     <!-- my style  -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- feather icons -->
@@ -22,17 +24,65 @@
       <a href="#" class="navbar-logo">Darussalam <span>Bismar</span>.</a>
 
       <div class="navbar-nav">
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#produk">Produk</a>
+        <!-- <a href="#product">Produk</a> -->
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="store-button"><i data-feather="shopping-bag"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- search form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- search form end -->
+
+      <!-- store section start -->
+      <div class="store">
+        <div class="cart-item">
+          <img src="img/logos/Shopee-logo.jpg" alt="Shopee Logo" />
+          <div class="item-detail">
+            <h3>Shopee</h3>
+            <div class="item-price"><a href="#">Masuk Shopee</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/Tokopedia-logo.png" alt="Tokopedia Logo" />
+          <div class="item-detail">
+            <h3>Tokopedia</h3>
+            <div class="item-price"><a href="#">Masuk Tokopedia</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/facebook-logo.png" alt="Facebook Logo" />
+          <div class="item-detail">
+            <h3>Facebook</h3>
+            <div class="item-price"><a href="#">Masuk Facebook</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/Whatsapp-logo.webp" alt="WhatsApp Logo" />
+          <div class="item-detail">
+            <h3>WhatsApp</h3>
+            <div class="item-price"><a href="#">Masuk WhatsApp</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/darbis-logo.png" alt="Darbis Logo" />
+          <div class="item-detail">
+            <h3>Darussalam Bismar</h3>
+            <div class="item-price"><a href="#">Offline Store</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- store section end -->
     </nav>
     <!-- navbar end -->
 
@@ -44,7 +94,6 @@
           Temukan berbagai pilihan laptop terbaik untuk balajar, bekerja, dan
           gaming dengan spesifikasi dan fitur unggulan.
         </p>
-        <a href="#" class="cta">Beli Sekarang</a>
       </main>
     </section>
     <!-- hero section end -->
@@ -74,8 +123,9 @@
     </section>
     <!-- about section end -->
 
-    <!-- produk section start -->
-    <section id="produk" class="produk">
+    <!-- product section start -->
+    <!--
+    <section id="product" class="product">
       <h2><span>Produk</span> Kami</h2>
       <p>
         Khusus laptop gaming, anda bisa request melalui
@@ -84,54 +134,71 @@
       </p>
 
       <div class="row">
-        <div class="produk-card">
+        <div class="product-card">
           <img
-            src="img/produk/post-HP-Elitebook-840-G6-a.png"
+            src="img/products/post-HP-Elitebook-840-G6-a.png"
             alt="Tuf Gaming"
-            class="produk-card-img"
+            class="product-card-img"
           />
-          <h3 class="produk-card-title">- Tuf Gaming -</h3>
-          <p class="produk-card-price">IDR 32.990.000</p>
+          <h3 class="product-card-title">- Tuf Gaming -</h3>
+          <p class="product-card-price">IDR 32.990.000</p>
         </div>
-        <div class="produk-card">
-          <img
-            src="img/produk/post-HP-Elitebook-840-G6-a.png"
-            alt="Tuf Gaming"
-            class="produk-card-img"
-          />
-          <h3 class="produk-card-title">- Tuf Gaming -</h3>
-          <p class="produk-card-price">IDR 32.990.000</p>
+      </div>
+    </section> -->
+    <!-- product section end -->
+
+    <!-- products section start -->
+    <section id="products" class="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Berikut produk unggulan kami yang sesuai untuk kebutuhan apapun. Dari
+        laptop kinerja yang berat sampai ringan
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/products/produk1.webp" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>Tuf Gaming</h3>
+            <div class="product-info">
+              <p>Intel® Core™ i5-13420H</p>
+              <p>Windows 11 Home</p>
+              <p>NVIDIA® GeForce RTX™ 3050, GDDR6 4GB</p>
+              <p>15.6" FHD (1920*1080), 144Hz IPS-Level</p>
+            </div>
+            <div class="product-price">
+              IDR 30.799.000 <span>IDR 30.899.000</span>
+            </div>
+            <div class="product-buy">
+              <a href="#" class="item-detail-button">Beli Sekarang</a>
+            </div>
+          </div>
         </div>
-        <div class="produk-card">
-          <img
-            src="img/produk/post-HP-Elitebook-840-G6-a.png"
-            alt="Tuf Gaming"
-            class="produk-card-img"
-          />
-          <h3 class="produk-card-title">- Tuf Gaming -</h3>
-          <p class="produk-card-price">IDR 32.990.000</p>
-        </div>
-        <div class="produk-card">
-          <img
-            src="img/produk/post-HP-Elitebook-840-G6-a.png"
-            alt="Tuf Gaming"
-            class="produk-card-img"
-          />
-          <h3 class="produk-card-title">- Tuf Gaming -</h3>
-          <p class="produk-card-price">IDR 32.990.000</p>
-        </div>
-        <div class="produk-card">
-          <img
-            src="img/produk/post-HP-Elitebook-840-G6-a.png"
-            alt="Tuf Gaming"
-            class="produk-card-img"
-          />
-          <h3 class="produk-card-title">- Tuf Gaming -</h3>
-          <p class="produk-card-price">IDR 32.990.000</p>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/products/produk1.webp" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>Tuf Gaming</h3>
+            <div class="product-info">
+              <p>Intel® Core™ i5-13420H</p>
+              <p>Windows 11 Home</p>
+              <p>NVIDIA® GeForce RTX™ 3050, GDDR6 4GB</p>
+              <p>15.6" FHD (1920*1080), 144Hz IPS-Level</p>
+            </div>
+            <div class="product-price">
+              IDR 30.799.000 <span>IDR 30.899.000</span>
+            </div>
+            <div class="product-buy">
+              <a href="#" class="item-detail-button">Beli Sekarang</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- produk section end -->
+    <!-- products section end -->
 
     <!-- contact section start -->
     <section class="contact" id="contact">
@@ -139,7 +206,8 @@
       <p>
         Silahkan hubungi kami, untuk request laptop yang anda inginkan. Anda
         juga bisa berkonsultasi terkait laptop yang sesuai dengan kebutuhan saat
-        ini.
+        ini. Mohon tinggalkan pesan dulu sebelum keluar dari website. Kritik dan
+        saran kami terima.
       </p>
 
       <div class="row">
@@ -151,18 +219,29 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <form action="">
+        <form
+          action="https://formspree.io/f/xyzyjjqd"
+          id="contact-form"
+          method="POST"
+        >
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
+            <input type="text" name="nama" placeholder="nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+            <input type="text" name="email" placeholder="email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
+            <input type="text" name="phone" placeholder="no hp" />
+          </div>
+          <div class="input-group">
+            <i data-feather="send"></i>
+            <textarea
+              name="message"
+              placeholder="tinggalkan pesan... "
+            ></textarea>
           </div>
           <button type="submit" class="btn">kirim pesan</button>
         </form>
@@ -180,7 +259,7 @@
         <div class="links">
           <a href="#home">Home</a>
           <a href="#about">Tentang Kami</a>
-          <a href="#produk">Produk</a>
+          <a href="#products">Produk</a>
           <a href="#contact">Kontak</a>
         </div>
 
@@ -190,6 +269,49 @@
       </div>
     </footer>
     <!-- footer section end -->
+
+    <!-- modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="cart-item">
+          <img src="img/logos/Shopee-logo.jpg" alt="Shopee Logo" />
+          <div class="item-detail">
+            <h3>Shopee</h3>
+            <div class="item-price"><a href="#">Masuk Shopee</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/Tokopedia-logo.png" alt="Tokopedia Logo" />
+          <div class="item-detail">
+            <h3>Tokopedia</h3>
+            <div class="item-price"><a href="#">Masuk Tokopedia</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/facebook-logo.png" alt="Facebook Logo" />
+          <div class="item-detail">
+            <h3>Facebook</h3>
+            <div class="item-price"><a href="#">Masuk Facebook</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/Whatsapp-logo.webp" alt="WhatsApp Logo" />
+          <div class="item-detail">
+            <h3>WhatsApp</h3>
+            <div class="item-price"><a href="#">Masuk WhatsApp</a></div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/logos/darbis-logo.png" alt="Darbis Logo" />
+          <div class="item-detail">
+            <h3>Darussalam Bismar</h3>
+            <div class="item-price"><a href="#">Offline Store</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal box item detail end -->
 
     <!-- feather icons -->
     <script>
