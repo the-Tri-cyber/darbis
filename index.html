@@ -17,11 +17,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- data produk -->
+    <script src="js/data.js"></script>
   </head>
   <body>
     <!-- navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Darussalam <span>Bismar</span>.</a>
+      <a href="#home" class="navbar-logo">
+        <img
+          src="img/logos/darbis-logo.png"
+          alt="Darbis Logo"
+          class="navbar-logo-img"
+        />
+        Darussalam <span>Bismar</span>.
+      </a>
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
@@ -39,7 +48,7 @@
 
       <!-- search form start -->
       <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here..." />
+        <input type="search" id="search-box" placeholder="Cari Laptop..." />
         <label for="search-box"><i data-feather="search"></i></label>
       </div>
       <!-- search form end -->
@@ -50,35 +59,48 @@
           <img src="img/logos/Shopee-logo.jpg" alt="Shopee Logo" />
           <div class="item-detail">
             <h3>Shopee</h3>
-            <div class="item-price"><a href="#">Masuk Shopee</a></div>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="img/logos/Tokopedia-logo.png" alt="Tokopedia Logo" />
-          <div class="item-detail">
-            <h3>Tokopedia</h3>
-            <div class="item-price"><a href="#">Masuk Tokopedia</a></div>
+            <div class="item-price">
+              <a href="https://shopee.co.id/bismardarussalam" target="_blank"
+                >Masuk Shopee</a
+              >
+            </div>
           </div>
         </div>
         <div class="cart-item">
           <img src="img/logos/facebook-logo.png" alt="Facebook Logo" />
           <div class="item-detail">
             <h3>Facebook</h3>
-            <div class="item-price"><a href="#">Masuk Facebook</a></div>
+            <div class="item-price">
+              <a
+                href="https://www.facebook.com/share/18FT5cxuAT/"
+                target="_blank"
+                >Masuk Facebook</a
+              >
+            </div>
           </div>
         </div>
         <div class="cart-item">
           <img src="img/logos/Whatsapp-logo.webp" alt="WhatsApp Logo" />
           <div class="item-detail">
             <h3>WhatsApp</h3>
-            <div class="item-price"><a href="#">Masuk WhatsApp</a></div>
+            <div class="item-price">
+              <a href="https://wa.me/62895325199505" target="_blank"
+                >Masuk WhatsApp</a
+              >
+            </div>
           </div>
         </div>
         <div class="cart-item">
           <img src="img/logos/darbis-logo.png" alt="Darbis Logo" />
           <div class="item-detail">
             <h3>Darussalam Bismar</h3>
-            <div class="item-price"><a href="#">Offline Store</a></div>
+            <div class="item-price">
+              <a
+                href="https://maps.app.goo.gl/R4YZ5ej6nzzCis4Y9"
+                target="_blank"
+                >Offline Store</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -123,80 +145,15 @@
     </section>
     <!-- about section end -->
 
-    <!-- product section start -->
-    <!--
-    <section id="product" class="product">
-      <h2><span>Produk</span> Kami</h2>
-      <p>
-        Khusus laptop gaming, anda bisa request melalui
-        <a href="#kontak">Kontak</a> kami jika produk yang anda inginkan belum
-        tertera dibawah ini.
-      </p>
-
-      <div class="row">
-        <div class="product-card">
-          <img
-            src="img/products/post-HP-Elitebook-840-G6-a.png"
-            alt="Tuf Gaming"
-            class="product-card-img"
-          />
-          <h3 class="product-card-title">- Tuf Gaming -</h3>
-          <p class="product-card-price">IDR 32.990.000</p>
-        </div>
-      </div>
-    </section> -->
-    <!-- product section end -->
-
     <!-- products section start -->
     <section id="products" class="products">
-      <h2><span>Produk Unggulan</span> Kami</h2>
+      <h2><span>Produk</span> Kami</h2>
       <p>
-        Berikut produk unggulan kami yang sesuai untuk kebutuhan apapun. Dari
-        laptop kinerja yang berat sampai ringan
+        Kami siap membantu Anda menemukan laptop yang sesuai dengan kebutuhan.
+        Dapatkan promonya sekarang juga! (Khusus dibulan ini).
       </p>
 
-      <div class="row">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="img/products/produk1.webp" alt="Produk 1" />
-          </div>
-          <div class="product-content">
-            <h3>Tuf Gaming</h3>
-            <div class="product-info">
-              <p>Intel® Core™ i5-13420H</p>
-              <p>Windows 11 Home</p>
-              <p>NVIDIA® GeForce RTX™ 3050, GDDR6 4GB</p>
-              <p>15.6" FHD (1920*1080), 144Hz IPS-Level</p>
-            </div>
-            <div class="product-price">
-              IDR 30.799.000 <span>IDR 30.899.000</span>
-            </div>
-            <div class="product-buy">
-              <a href="#" class="item-detail-button">Beli Sekarang</a>
-            </div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="img/products/produk1.webp" alt="Produk 1" />
-          </div>
-          <div class="product-content">
-            <h3>Tuf Gaming</h3>
-            <div class="product-info">
-              <p>Intel® Core™ i5-13420H</p>
-              <p>Windows 11 Home</p>
-              <p>NVIDIA® GeForce RTX™ 3050, GDDR6 4GB</p>
-              <p>15.6" FHD (1920*1080), 144Hz IPS-Level</p>
-            </div>
-            <div class="product-price">
-              IDR 30.799.000 <span>IDR 30.899.000</span>
-            </div>
-            <div class="product-buy">
-              <a href="#" class="item-detail-button">Beli Sekarang</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="laptopList"></div>
     </section>
     <!-- products section end -->
 
@@ -252,9 +209,13 @@
     <!-- footer section start -->
     <footer>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
+        <a
+          href="https://www.instagram.com/bismardarussalam/profilecard/?igsh=MXJweHduZmhvb2tsZQ=="
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/share/18FT5cxuAT/"
+          ><i data-feather="facebook"></i
+        ></a>
 
         <div class="links">
           <a href="#home">Home</a>
@@ -270,54 +231,20 @@
     </footer>
     <!-- footer section end -->
 
-    <!-- modal box item detail start -->
-    <div class="modal" id="item-detail-modal">
-      <div class="modal-container">
-        <a href="#" class="close-icon"><i data-feather="x"></i></a>
-        <div class="cart-item">
-          <img src="img/logos/Shopee-logo.jpg" alt="Shopee Logo" />
-          <div class="item-detail">
-            <h3>Shopee</h3>
-            <div class="item-price"><a href="#">Masuk Shopee</a></div>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="img/logos/Tokopedia-logo.png" alt="Tokopedia Logo" />
-          <div class="item-detail">
-            <h3>Tokopedia</h3>
-            <div class="item-price"><a href="#">Masuk Tokopedia</a></div>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="img/logos/facebook-logo.png" alt="Facebook Logo" />
-          <div class="item-detail">
-            <h3>Facebook</h3>
-            <div class="item-price"><a href="#">Masuk Facebook</a></div>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="img/logos/Whatsapp-logo.webp" alt="WhatsApp Logo" />
-          <div class="item-detail">
-            <h3>WhatsApp</h3>
-            <div class="item-price"><a href="#">Masuk WhatsApp</a></div>
-          </div>
-        </div>
-        <div class="cart-item">
-          <img src="img/logos/darbis-logo.png" alt="Darbis Logo" />
-          <div class="item-detail">
-            <h3>Darussalam Bismar</h3>
-            <div class="item-price"><a href="#">Offline Store</a></div>
-          </div>
-        </div>
-      </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp-float">
+      <div class="whatsapp-text">Butuh Bantuan?</div>
+      <a href="https://wa.me/62895325199505" target="_blank">
+        <img src="img/logos/Whatsapp-logo.webp" alt="WhatsApp" />
+      </a>
     </div>
-    <!-- modal box item detail end -->
 
     <!-- feather icons -->
     <script>
       feather.replace();
     </script>
-
+    <!-- product data and script -->
+    <script src="js/app.js"></script>
     <!-- my javascript -->
     <script src="js/script.js"></script>
   </body>
