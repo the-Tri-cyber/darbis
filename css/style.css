@@ -547,6 +547,8 @@ footer .credit a {
 
 .modal {
   display: none; /* Tersembunyi secara default */
+  justify-content: center;
+  align-items: center;
   position: fixed; /* Tetap di tempat */
   z-index: 1; /* Di atas elemen lainnya */
   left: 0;
@@ -559,7 +561,6 @@ footer .credit a {
 
 .modal .modal-content {
   background-color: #fff; /* Latar belakang putih */
-  margin: 13% auto; /* Pusatkan modal */
   padding: 20px; /* Ruang di dalam modal */
   border: 1px solid #888; /* Garis batas */
   width: 80%; /* Lebar modal */
@@ -730,5 +731,9 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .products .product-image img {
+    height: 18rem;
   }
 }
