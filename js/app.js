@@ -16,15 +16,17 @@ const displayLaptops = (filteredLaptops = laptop) => {
           <div class="product-content">
               <h3>${laptop.brand} ${laptop.type}</h3>
               <div class="product-info">
-                  <p>${laptop.processor}</p>
-                  <p>${laptop.ram}</p>
-                  <p>${laptop.storage}</p>
-                  <p>${laptop.layar}</p>
+                  <p>processor: ${laptop.processor}</p>
+                  <p>ram: ${laptop.ram}</p>
+                  <p>storage: ${laptop.storage}</p>
+                  <p>display: ${laptop.layar}</p>
+                  <p>kondisi: ${laptop.kondisi}</p>
+                  <p>keterangan: ${laptop.keterangan}</p>
               </div>
               <div class="product-price">
-                  IDR ${laptop.price.toLocaleString(
+                  IDR ${laptop.discount.toLocaleString(
                     "id-ID"
-                  )} <span>IDR ${laptop.discount.toLocaleString("id-ID")}</span>
+                  )} <span>IDR ${laptop.price.toLocaleString("id-ID")}</span>
               </div>
               <div class="product-buy">
                 <a href="https://wa.me/62895325199505?text=Hay admin DarBis saya mau beli laptop ${

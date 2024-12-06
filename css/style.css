@@ -545,6 +545,75 @@ footer .credit a {
   height: auto;
 }
 
+.modal {
+  display: none; /* Tersembunyi secara default */
+  position: fixed; /* Tetap di tempat */
+  z-index: 1; /* Di atas elemen lainnya */
+  left: 0;
+  top: 0;
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh */
+  overflow: auto; /* Aktifkan scroll jika diperlukan */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal .modal-content {
+  background-color: #fff; /* Latar belakang putih */
+  margin: 13% auto; /* Pusatkan modal */
+  padding: 20px; /* Ruang di dalam modal */
+  border: 1px solid #888; /* Garis batas */
+  width: 80%; /* Lebar modal */
+  max-width: 500px; /* Lebar maksimum modal */
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+.modal .modal-content .close {
+  color: #aaa; /* Warna untuk tombol close */
+  float: right; /* Posisi di kanan */
+  font-size: 28px; /* Ukuran font */
+  font-weight: bold; /* Berat font */
+}
+
+.modal .modal-content .close:hover,
+.modal .modal-content .close:focus {
+  color: black; /* Warna saat hover */
+  text-decoration: none; /* Tanpa garis bawah */
+  cursor: pointer; /* Kursor pointer */
+}
+
+.modal .modal-content h2 {
+  margin-top: 0;
+  color: var(--primary);
+  text-align: center;
+  font-size: 5em;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.modal .modal-content p {
+  color: var(--bg);
+  font-size: 1.5em;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.modal .modal-content .btn-modal {
+  background-color: #28a745; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px 20px; /* Ruang dalam tombol */
+  text-align: center; /* Pusatkan teks */
+  text-decoration: none; /* Tanpa garis bawah */
+  border-radius: 5px; /* Sudut membulat tombol */
+  margin-top: 10px; /* Jarak atas */
+  display: flex;
+  justify-content: center;
+}
+
+.modal .modal-content .btn-modal:hover {
+  background-color: #218838; /* Warna saat hover */
+}
+
 /* media queries */
 
 /* laptop */

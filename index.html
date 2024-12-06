@@ -239,9 +239,55 @@
       </a>
     </div>
 
+    <!-- modal box discount -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal"><i data-feather="x"></i></span>
+        <h2>Diskon Spesial 12.12!</h2>
+        <p>
+          Dapatkan diskon hingga 40% untuk salah satu produk. Jangan lewatkan
+          kesempatan ini! diskon berlaku hingga 20 Desember 2024.
+        </p>
+        <a href="#products" class="btn-modal">Lihat Sekarang</a>
+      </div>
+    </div>
+
     <!-- feather icons -->
     <script>
       feather.replace();
+
+      // Mendapatkan elemen modal dan tombol close
+      const modal = document.getElementById("modal");
+      const closeModal = document.getElementById("closeModal");
+
+      // Fungsi untuk mengatur modal
+      const handleModal = () => {
+        const openModal = () => {
+          modal.style.display = "block";
+        };
+
+        const closeModalFunction = () => {
+          modal.style.display = "none";
+        };
+
+        // Menampilkan modal setelah 4 detik
+        setTimeout(openModal, 1000); // 4000 ms = 4 detik
+
+        // Menutup modal ketika tombol close diklik
+        closeModal.onclick = closeModalFunction;
+
+        // Menutup modal jika pengguna mengklik di luar modal
+        window.onclick = (event) => {
+          if (event.target === modal) {
+            closeModalFunction();
+          }
+        };
+
+        btnModal.onclick = closeModalFunction;
+      };
+
+      // Memanggil fungsi handleModal saat halaman dimuat
+      window.onload = handleModal;
     </script>
     <!-- product data and script -->
     <script src="js/app.js"></script>
