@@ -692,6 +692,10 @@ footer .credit a {
     font-size: 1.6rem;
   }
 
+  .products .product-image img {
+    height: 20rem;
+  }
+
   .product p {
     font-size: 1.2rem;
   }
